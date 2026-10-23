@@ -2,7 +2,7 @@
   "expo": {
     "scheme": "servisapp",
     "name": "Servis",
-    "slug": "mobile",
+    "slug": "servis-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,6 +11,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.garpl.servisapp",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -25,7 +26,13 @@
     "plugins": [
       "expo-router",
       "expo-status-bar",
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Sefer sırasında konumunuz yolcularla paylaşılır."
+        }
+      ]
     ]
   }
 }
