@@ -1,0 +1,1 @@
+process.env.DB_NAME = "servis_app_test";
