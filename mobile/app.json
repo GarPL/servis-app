@@ -36,7 +36,8 @@
         {
           "locationWhenInUsePermission": "Sefer sırasında konumunuz yolcularla paylaşılır."
         }
-      ]
+      ],
+      "expo-font"
     ],
     "extra": {
       "router": {},
