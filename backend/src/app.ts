@@ -31,6 +31,7 @@ const girisSiniri = rateLimit({
 });
 
 const app = express();
+app.set("trust proxy", 1);
 app.use(cors({ origin: IZINLI_ADRESLER }));
 app.use(express.json());
 

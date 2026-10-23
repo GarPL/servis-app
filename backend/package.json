@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Servis uygulamasının sunucusu (Express + PostgreSQL + Socket.IO)",
   "scripts": {
+    "start": "tsx src/index.ts",
     "dev": "tsx watch src/index.ts",
     "simulasyon": "tsx scripts/simulasyon.ts",
     "typecheck": "tsc --noEmit",
@@ -11,6 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "24.x"
+  },
   "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -19,7 +23,8 @@
     "express-rate-limit": "^8.7.1",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.23.1",
-    "socket.io": "^4.8.4"
+    "socket.io": "^4.8.4",
+    "tsx": "^4.23.15"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -28,7 +33,6 @@
     "@types/node": "^26.6.5",
     "@types/pg": "^8.23.1",
     "socket.io-client": "^4.8.4",
-    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
